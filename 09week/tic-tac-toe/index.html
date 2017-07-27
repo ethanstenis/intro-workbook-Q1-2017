@@ -5,53 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 
-<style>
-body {
-  width: 90%;
-  margin: 0 auto;
-}
-h1 {
-  font-size: 35px;
-  margin-left: 140px;
-}
-
-div[data-cell] {
-  width: 150px;
-  height: 150px;
-  background-color: #f2f2f2;
-  float: left;
-  border: 1px solid #808080;
-  text-align: center;
-  font-size: 125px;
-}
-
-.row {
-  clear: both;
-}
-
-#announce-winner {
-  clear: both;
-  font-size: 75px;
-}
-
-#clear {
-  height: 50px;
-  width: 455px;
-  margin-top: 20px;
-  background-color: green;
-  color: white;
-  font-size: 18px;
-  border: 2px solid #808080;
-  border-radius: 5px;
-}
-</style>
-
 <!-- This is where the body begins -->
 <body>
-  <h1>Tic Tac Toe</h1>
+  <div id="game-board">
+  <h1>Tic • Tac • Toe</h1>
   <div class="row">
     <div data-cell="0"></div>
     <div data-cell="1"></div>
@@ -69,7 +31,7 @@ div[data-cell] {
   </div>
   <div id="announce-winner"></div>
   <button id="clear">Clear Board</button>
-
+</div>
 <!-- jQuery CDN Link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
